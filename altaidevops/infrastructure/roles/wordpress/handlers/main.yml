@@ -1,8 +1,5 @@
 ---
 # handlers file for example
-- name: Start web server
-  when: ( ansible_facts['distribution'] == "Amazon" or ansible_facts['distribution'] == "CentOS" )
-  systemd: 
-    name: httpd 
-    state: restarted
-    enabled: true
+- name: restart apache
+  service: name=apache2 state=restarted
+  become: yes

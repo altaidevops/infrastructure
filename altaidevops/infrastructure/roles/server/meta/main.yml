@@ -1,6 +1,6 @@
 galaxy_info:
   author: your name
-  description: Create AWS IAM user and "DevOps" group. 
+  description: Server role contents.
   company: your company (optional)
 
   # If the issue tracker for your role is not on github, uncomment the
